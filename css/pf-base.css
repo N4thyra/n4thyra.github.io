@@ -78,8 +78,8 @@ p.signature {
 
 #portfolio-apps a:hover .portfolio-app-info,
 #portfolio-apps a:hover .portfolio-app-item img  {
-  //background-color: #492a2a;
-  opacity: 0.7;
+  background-color: #a73737;
+  //opacity: 0.7;
 }
 
 #portfolio-content h2 {
