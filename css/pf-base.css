@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+header {
+  background-color: #7a2828;
+}
+
+header h1 {
+  padding-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: #1f1c18;
+}
+
+nav ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  background-color: #492a2a;
+}
+
+section div p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p.signature {
+  padding-left: 250px;
+  font-weight: bold;
+}
+
+.portfolio-container {
+  margin: 0;
+  padding: 0;
+}
+
+#portfolio-about {
+  background-color: #a73737;
+}
+
+#portfolio-content {
+  background-color: #1f1c18;
+}
+
+#portfolio-apps a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#portfolio-apps a:hover .portfolio-app-info,
+#portfolio-apps a:hover .portfolio-app-item img  {
+  //background-color: #492a2a;
+  opacity: 0.7;
+}
+
+#portfolio-content h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.portfolio-app-item {
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.portfolio-app-item img {
+  max-height: 300px;
+}
+
+.portfolio-app-info {
+  background-color: #7a2828;
+  padding: 1rem;
+}
+
+.portfolio-footer-image img {
+  width: 10vw;
+  height: 10vh;
+}
+
+#portfolio-footer {
+  padding-top: 1rem;
+  background-color: #7a2828;
+}

@@ -1,0 +1,60 @@
+.portfolio-container {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+}
+
+header {
+  flex: 1 1 100%;
+}
+
+#portfolio-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  flex: 20 1 100%;
+}
+
+#portfolio-about {
+  flex: 1 1 100%;
+}
+
+#portfolio-apps {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-top: 0.2rem solid #7a2828;
+}
+
+.portfolio-app-item {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main {
+  flex: 1 1 100%;
+}
+
+footer {
+  flex: 0.1 1 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 901px) {
+  header {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  nav ul li {
+    //padding: 1rem;
+  }
+}
