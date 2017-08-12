@@ -42,7 +42,7 @@ footer {
   justify-content: space-around;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 701px) {
   header {
     flex: 1 1 100%;
     display: flex;
