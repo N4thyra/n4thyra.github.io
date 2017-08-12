@@ -27,6 +27,8 @@ header h1 {
   padding-left: 1rem;
 }
 
+/* NAV */
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -47,6 +49,64 @@ nav ul li a{
 nav ul li a:hover{
   background-color: #492a2a;
 }
+
+/* NAV BURGER */
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+.burger {
+  width: 40px;
+  user-select: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.burger span {
+  display: block;
+  height: 5px;
+  width: 40px;
+  margin-bottom: 8px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+nav input[type="checkbox"]:checked + label > div > span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+nav input[type="checkbox"]:checked + label > div > span:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav input[type="checkbox"]:checked + label > div > span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav input[type="checkbox"] + label + div {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav input[type="checkbox"]:checked + label + div {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+/* END NAV BURGER */
 
 section div p {
   padding-left: 1rem;
